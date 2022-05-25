@@ -1,0 +1,548 @@
+#question 1 entet the list from user and sum all negative numbers
+#question 2 enter the list from user and find the sum of all odd and even 
+#3question enter 2 list and swap first element of lists
+#question 4 enter 2 list list 1 ka phele elment swap karna
+#hai dusri list ke last elments se
+#answer1---------------------------------------->>>>>.
+"""size=int(input("enter the size of list:"))
+i=0
+sum=0
+lst=[]
+while(i<size):
+    x=int(input())
+    lst.append(x)
+    if(lst[i]<0):
+        sum=sum+lst[i]
+    i+=1
+print("the sum of all negative number is:%d"%sum)"""
+"""size=int(input("enter the size:"))
+lst=[]
+i=0
+for i in range(0,size):
+    x=int(input())
+    lst.append(x)
+print(lst)"""
+#answer2---------------->>>>.
+"""size=int(input("enter the size of list:"))
+i=0
+sum=0
+sum2=0
+lst=[]
+while(i<size):
+    x=int(input())
+    lst.append(x)
+    if(lst[i]%2==0):
+        sum=sum+lst[i]
+    else:
+        sum2=sum2+lst[i]
+    i+=1
+print("the sum of all even number is:%d"%sum)
+print("the sum of all odd number is:%d"%sum2)"""
+# size=int(input("enter the size of list:"))
+# i=0
+# sum=0
+# sum2=0
+# lst=[]
+# while(i<size):
+#     x=int(input())
+#     lst.append(x)
+#     if(i%2==0):
+#         sum=sum+lst[i]
+#     else:
+#         sum2=sum2+lst[i]
+#     i+=1
+# print("the sum of all odd number is:%d"%sum)
+# print("the sum of all even number is:%d"%sum2)
+# lst1=[]
+# lst2=[]
+# lst1.extend(int(i) for i in input("enter the number:").split())
+# lst2.extend(int(i) for i in input("enter the number:").split())
+
+# print(lst1,lst2,sep="\n")
+
+
+
+
+#nested list
+#question 1--------------------------------------->>>>
+# lst=[[1,2,3],[4,5,6],[7,8,9]]#nested list
+# print(lst[0])
+# print(lst[0])
+#enter the nested list at runtime--->
+# lst=[]
+# for i in range(3):
+#     lst1=[]
+#     for j in range(3):
+#         lst1.append(int(input()))
+#     lst.append(lst1)
+# print(lst)
+#------------------------------>
+#question1->enter the matrix form the user and print the broder elements
+#of the matrix done
+#question2--->print the diagonal of the matrix done 
+#question3------------>printb anti diagoanal done 
+#question ->upper half of the matrix done 
+#question ->lower half of theb matrix done 
+"""lst=[]
+for i in range (4):
+    lst1=[]
+    for j in range (4):
+        lst1.append(int(input()))
+    lst.append(lst1)
+for i in range (4):
+    for j in range (4):
+        if(i==0 or j==0 or i==3 or j==3):
+            print(lst[i][j],end='')
+        else:
+            print(" ",end='')
+    print()"""
+#question do list ke element and multiplication
+"""lst=[]
+lst2=[]
+for i in range (2):
+    lst1=[]
+    for j in range (2):
+        lst1.append(int(input()))
+    lst.append(lst1)
+print("enter the elements of list second:")
+lst3=[]
+for i in range (2):
+    lst4=[]
+    for j in range (2):
+        lst4.append(int(input()))
+    lst3.append(lst4)
+print("list 1 is:")
+for i in range (2):
+    for j in range (2):
+            print(lst[i][j],end='')
+    print()
+print("list 2 is:")
+for i in range (2):
+    for j in range (2):
+        print(lst3[i][j],end='')
+    print()
+
+for i in range (2):
+    sum=0
+    for j in range (2):
+        sum=lst[i][j]+lst3[i][j]
+        lst2.append(int(sum))
+print(lst2)
+"""
+"""lst=[]
+lst2=[]
+for i in range (2):
+    lst1=[]
+    for j in range (2):
+        lst1.append(int(input()))
+    lst.append(lst1)
+print("enter the elements of list second:")
+lst3=[]
+for i in range (2):
+    lst4=[]
+    for j in range (2):
+        lst4.append(int(input()))
+    lst3.append(lst4)
+print("list 1 is:")
+for i in range (2):
+    for j in range (2):
+            print(lst[i][j],end='')
+    print()
+print("list 2 is:")
+for i in range (2):
+    for j in range (2):
+        print(lst3[i][j],end='')
+    print()
+lst9=[]
+print("the matrix after the multiplication:")
+for i in range (2):
+    for j in range (2):
+        lst9
+    """
+
+
+
+
+
+
+
+
+
+
+
+#<question1>write a program check wether it is armstrong or not
+#<question2>wap a program to check perfect or not
+#<question3>to print an table of a number
+#<question3>enter the mobile number and print the of odd digit index
+#<question5>wap check wether the number is neon or not
+#given two integers n,m the problem is to find the number close to n
+#and divisible by m
+#wap and 
+#solution 5
+num=int(input("enter the number:"))
+temp=num*num
+sum=0
+while(temp>0):
+    rem=temp%10
+    sum=sum+rem
+    temp=temp//10
+if(sum==num):
+    print("the number is neon number!")
+else:
+    print("the number is not a neon number!")
+#solution 3
+num=int(input("enter the number:"))
+i=1
+while(i<=10):
+    print("%d   X   %d  =   %d"%(i,num,i*num))
+    i+=1
+#solution4
+num=int(input("enter the 10 digit number:"))
+i=10
+sumodd=0
+sumeven=0
+while(i>=0):
+    if(i%2==0):
+        rem=num%10
+        sumodd=sumodd+rem
+        num=num//10
+        i-=1
+    else:
+        rem=num%10
+        sumeven=sumeven+rem
+        num=num//10
+        i-=1 
+if(sumodd==sumeven):
+    print("magic")
+else:
+    print("not")
+#solution1
+import math
+num=int(input("enter the number:"))
+temp=num
+sum=0
+dig=math.log10(num)+1
+print(dig)
+while(num>0):
+    rem=num%10
+    sum=sum+(rem**int(dig))
+    print(sum,rem)
+    num=num//10
+if(sum==temp):
+    print("armstrong")
+else:
+    print("not")
+
+
+
+
+
+
+
+
+
+
+
+
+#q1=>user se eke number enter karna hai or uski table
+#print karni hai
+num=int(input())
+lst=[]
+for i in range(1,11):
+    lst.append(i)
+lst1=list(map(lambda n1:n1*num,lst))
+print(lst1)
+#question2>>>> print list in which all number is greater then 18
+"""lst=[]
+lst=list(map(int,input().split()))
+lst1=list(filter(lambda n:n>=18,lst))
+print(lst1)"""
+#question3====>upper case swap list
+"""lst=list(map(str,input().split()))
+lst1=list(map(lambda n:n.upper(),lst))
+print(lst1)"""
+#question4====>fibonacci series
+"""n=int(input())
+lst=[0,1]
+lst1=list(map(lambda n:lst.append(lst[-1]+lst[-2]),range(n-2)))
+print(lst)"""
+#question5=-=====>list1,list2 enter the print lidt three print
+#of comman elements
+"""lst1=list(map(int,input().split()))
+lst4=[]
+for i in lst1:
+    if i not in lst4:
+        lst4.append(i)
+lst2=list(map(int,input().split()))
+lst5=[]
+for i in lst2:
+    if i not in lst5:
+        lst5.append(i)
+lst3=list(filter(lambda n: n in lst1,lst2))
+print(lst3)"""
+#Question6===>list check even,odd elements
+"""lst=list(map(int,input().split()))
+lst1=list(filter(lambda n:n%2==0,lst))
+print('even number',len(lst1))
+lst2=list(filter(lambda n:n%2!=0,lst))
+print('odd number',len(lst2))"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+#question 1 filw with data and copy odd number of lines
+#into another file
+# Question 2 odd number of words ko copy karna hai
+#  kitne space kitne\n kitne tab hai ek file mein
+"""f=open('avin.txt','r')
+f1=open("a.txt","w+")
+str=f.readlines()
+print(str)
+for i in range(len(str)):
+    if i%2==0:
+        print(str[i])
+        f1.write(str[i])
+        f1.write("\n")
+f1.seek(0,0)
+a=f1.read()
+print(a)
+f1.close()
+f.close()"""
+#sol 2
+"""f=open('avin.txt','r')
+f1=open('a.txt','w+')
+str=f.read().split()
+print(str)
+for i in range(len(str)):
+    if i%2==0:
+       print(str[i])
+       f1.write(str[i])
+       f1.write(' ')
+f1.seek(0,0)
+a=f1.read()
+print(a)
+f1.close()
+f.close()"""
+#sol 3
+"""f=open('avin.txt','r')
+s=n=t=0
+str=f.read()
+for i in str:
+    if ord(i)==32:
+        s+=1
+    elif i=='\n':
+        n+=1
+    elif i=='\t':
+        t+=1
+print(s,n,t)
+f.close()"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#assingnment number 1(module2):
+#--------------------------------------->>>
+#question1::::describe the following method:
+#1>fromkeys
+#2>setdefault
+
+#question2:::wap to count the frequency of each character in a given string
+#expected from the user using dictionary
+
+
+#question3:::wap to accept rollno,name,and marks of 5 students
+#and store the detail in dictionary using roll no as key
+#and also display th sum of marks of all five student
+#-------------------------------------------->>>
+
+
+#---------------------------------------------->>>
+#question1:>>>ek dictionary use se enter karni hai and find
+#the sum of values
+
+#question2:>>ek dict enter karo or values ko sort
+#kardo ek list mein
+
+
+#question3:>>do dict user se enter karani hai or 
+#unko marge ek third dict mein
+#--------------------------------------------->>>>.
+"""dict={}
+size=int(input("enter the size od dict:"))
+for i in range (size):
+    k=input()
+    v=int(input())
+    dict.update({k:v})
+print(dict)
+print(dict.values())
+print(dict.keys())
+print(dict.items())
+print(sum(dict.values()))"""
+#---------------------------------------->>>>
+#solution1:------->>>
+"""dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=input()
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+print("sum of all the values is:",end='')
+print(sum(dict.values()))"""
+#solution2-------------->>>
+"""dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+print(sorted(dict.values()))"""
+#solution3------------------->>
+"""dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+dict1={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict1.update({keys:values})
+print(dict1)
+
+dict2={}
+for i in (dict,dict1):
+    dict2.update(i)
+print(dict2)"""
+
+#question4:values ka sum using for loop
+
+
+#question5:check wether the key is present in the dict or not
+#if present the print its value else print
+#key not found
+
+#question6
+#n====>
+#output:d={1:1*5,2:2*5.......}
+
+#question7:print the multiplicayion of all keys and values
+#solution4------------------------>
+"""dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+sum=0
+for i in dict.values():
+    sum=sum+i
+print(sum)"""
+#solution5---------------->>>
+"""dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+check=int(input("enter the key which u want to check:"))
+if check in dict.keys():
+    print(dict[check])
+else:
+    print("key not found!")"""
+#solution7:-------------------------->
+dict={}
+size=int(input("enter the size of the dict:"))
+for i in range (size):
+    keys=int(input())
+    values=int(input())
+    dict.update({keys:values})
+print(dict)
+
+
+
+
+
+
+
+
+
+
+#question 4:total number of lines in a file
+"""f=open('avin.txt','r')
+f.seek(0,0)
+sum=0
+str=f.read()
+print(str)
+for i in str:
+    if i=='\n':
+        sum+=1
+print(sum)
+f.close()"""
+#question 5: total number of words
+"""f=open('avin.txt','r')
+f.seek(0,0)
+sum=0
+str=f.read()
+a=str.split()
+print(a,type(a))
+for i in a:
+    sum+=1
+print(sum)
+f.close()"""
+#question 6:total number of characters kitne hai
+"""f=open('avin.txt','r')
+
+sum=0
+str=f.read()
+f.seek(0,0)
+for i in str:
+    sum+=1
+print(sum-1)
+f.close()"""
+#question 7:to and the ka count kitna hai
+"""f=open('avin.txt','r')
+f.seek(0,0)
+str=f.read()
+print(str)
+b=str.lower()
+print(b)
+b=b.split()
+print(b)
+sum=0
+for i in b:
+    if i =='to' or i=='and' or i=='the':
+            sum+=1
+print(sum)
+f.close()"""
+f=open('avin.txt','r')
+str=f.readlines()
+print(str,type(str))
